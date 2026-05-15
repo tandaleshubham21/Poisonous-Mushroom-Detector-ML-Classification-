@@ -231,15 +231,6 @@ Through this project:
 * Model evaluation methods were practiced
 * Real-world classification problem-solving skills were improved
 
----
-
-# 👨‍💻 Author
-
-## Shubham Tandale
-
-PGDM — Business Analytics
-
----
 
 # ⭐ Conclusion
 
