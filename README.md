@@ -213,7 +213,7 @@ Poisonous-Mushroom-Detector-ML/
 │   └── mushrooms.csv
 │
 ├── notebooks/
-│   └── Best_Mushroom_Classification_Project.ipynb
+│   └── Mushroom_Classification.ipynb
 │
 ├── images/
 │   ├── feature_importance.png
