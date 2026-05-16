@@ -59,23 +59,6 @@ Unknown edibility mushrooms are grouped into the poisonous category.
 
 ---
 
-# 📖 Features Used
-
-Some of the most predictive features identified during analysis include:
-
-* Odor
-* Spore Print Color
-* Gill Color
-* Gill Size
-* Ring Type
-* Stalk Root
-* Bruises
-* Population
-* Stalk Surface Above Ring
-* Stalk Surface Below Ring
-
----
-
 # ⚙️ Technologies Used
 
 * Python
@@ -85,6 +68,7 @@ Some of the most predictive features identified during analysis include:
 * Seaborn
 * Scikit-learn
 * Jupyter Notebook
+* Google Colab
 
 ---
 
@@ -124,7 +108,7 @@ Checked for missing values and dataset consistency.
 
 Applied Label Encoding to convert categorical values into numerical format.
 
-## Step 4 — Exploratory Data Analysis
+## Step 4 — Exploratory Data Analysis (EDA)
 
 Performed feature importance analysis using Random Forest.
 
@@ -146,15 +130,26 @@ Evaluated models using:
 
 ---
 
-# 📊 Evaluation Metrics
+# 📊 Exploratory Data Analysis (EDA)
 
-The following evaluation metrics were used to compare model performance:
+The project includes visual analysis and feature importance evaluation to understand the relationship between mushroom characteristics and toxicity.
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+## Top Predictive Features
+
+The following features were identified as highly influential:
+
+* odor
+* spore-print-color
+* gill-color
+* ring-type
+* gill-size
+
+## Visualization Included
+
+* Feature Importance Graph
+* Confusion Matrices
+* Classification Reports
+* Accuracy Comparisons
 
 ---
 
@@ -173,9 +168,28 @@ are among the strongest predictors.
 
 ---
 
+# 📊 Evaluation Metrics
+
+The following evaluation metrics were used to compare model performance:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+
+---
+
 # 🏆 Model Performance
 
 The implemented models achieved high classification accuracy on the dataset.
+
+| Model               | Performance                        |
+| ------------------- | ---------------------------------- |
+| Logistic Regression | High Accuracy                      |
+| K-Nearest Neighbors | Very Good Performance              |
+| Random Forest       | Best Overall Performance           |
+| Naive Bayes         | Efficient Probabilistic Prediction |
 
 ### Best Performing Model
 
@@ -202,6 +216,11 @@ Poisonous-Mushroom-Detector-ML/
 │   └── Best_Mushroom_Classification_Project.ipynb
 │
 ├── images/
+│   ├── feature_importance.png
+│   ├── lr_confusion_matrix.png
+│   ├── knn_confusion_matrix.png
+│   ├── rf_confusion_matrix.png
+│   └── nb_confusion_matrix.png
 │
 ├── requirements.txt
 ├── README.md
@@ -222,16 +241,62 @@ Possible future enhancements:
 
 ---
 
+# 📌 Findings and Insights
+
+## Key Findings from the Analysis
+
+### 1. Odor is the Most Important Feature
+
+The feature importance analysis revealed that odor is the strongest predictor for determining whether a mushroom is poisonous or edible.
+
+### 2. Random Forest Achieved the Best Performance
+
+Among all implemented machine learning algorithms:
+
+* Logistic Regression
+* K-Nearest Neighbors (KNN)
+* Random Forest
+* Naive Bayes
+
+the Random Forest Classifier achieved the highest accuracy and most reliable predictions.
+
+### 3. Important Predictive Features
+
+The following features contributed most significantly to classification:
+
+* odor
+* gill-color
+* spore-print-color
+* ring-type
+* gill-size
+
+### 4. Machine Learning Successfully Classified Mushroom Toxicity
+
+The classification models effectively identified poisonous and edible mushrooms with high prediction accuracy.
+
+---
+
 # 📚 Learning Outcomes
 
-Through this project:
+Through this project, the following concepts and techniques were learned:
 
-* Multiple ML classification techniques were explored
-* Feature selection and preprocessing techniques were applied
-* Model evaluation methods were practiced
-* Real-world classification problem-solving skills were improved
+* Data preprocessing and cleaning
+* Handling categorical datasets
+* Label Encoding techniques
+* Exploratory Data Analysis (EDA)
+* Feature Importance Analysis
+* Supervised Machine Learning Algorithms
+* Model evaluation and comparison
+* Confusion Matrix interpretation
+* Classification Report analysis
+* Practical implementation of ML workflows
 
+---
 
-# ⭐ Conclusion
+# 🧠 Conclusion
 
-This project demonstrates how Machine Learning can be effectively used for classification tasks involving categorical biological datasets. By comparing multiple classification algorithms and analyzing feature importance, the project successfully identifies poisonous mushrooms with high accuracy.
+This project demonstrates how Machine Learning can effectively solve classification problems involving biological datasets. Multiple classification algorithms were implemented and compared to predict poisonous and edible mushrooms using categorical features.
+
+Among all models, the Random Forest Classifier delivered the best overall performance due to its strong predictive capability and ability to capture complex feature relationships.
+
+The project also highlights the importance of feature selection and exploratory data analysis in improving model performance and interpretability.
